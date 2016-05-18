@@ -26,6 +26,6 @@
   "scripts": {
     "postversion": "npm publish && git push && git push --tags",
     "preversion": "npm test",
-    "test": "TZ=utc nyc mocha && standard"
+    "test": "standard"
   }
 }
