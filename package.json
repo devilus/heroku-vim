@@ -1,0 +1,31 @@
+{
+  "name": "heroku-vim",
+  "description": "Install vim and use it in a dyno",
+  "version": "0.0.0",
+  "author": "Jeff Dickey (@dickeyxxx)",
+  "bugs": {
+    "url": "https://github.com/heroku/heroku-vim/issues"
+  },
+  "dependencies": {
+    "co": "4.6.0",
+    "heroku-cli-util": "5.10.11"
+  },
+  "devDependencies": {
+    "standard": "7.0.1"
+  },
+  "homepage": "https://github.com/heroku/heroku-vim",
+  "keywords": [
+    "heroku-plugin"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/heroku-vim.git"
+  },
+  "scripts": {
+    "postversion": "npm publish && git push && git push --tags",
+    "preversion": "npm test",
+    "test": "TZ=utc nyc mocha && standard"
+  }
+}
