@@ -8,11 +8,11 @@
   },
   "dependencies": {
     "co": "4.6.0",
-    "heroku-cli-util": "5.10.12",
-    "heroku-run": "3.2.4"
+    "heroku-cli-util": "6.0.14",
+    "heroku-run": "3.2.14"
   },
   "devDependencies": {
-    "standard": "7.0.1"
+    "standard": "7.1.2"
   },
   "homepage": "https://github.com/heroku/heroku-vim",
   "keywords": [
