@@ -9,9 +9,8 @@ function * run (context, heroku) {
     heroku: heroku,
     app: context.app,
     command: `mkdir vim
-    curl https://s3.amazonaws.com/heroku-vim/vim-7.3.tar.gz --location --silent | tar xz -C vim
-      export PATH=$PATH:/app/vim/bin
-      export VIMRUNTIME=/app/vim/share/vim/vim73
+    curl https://github.com/devilus/heroku-vim/blob/master/vim-static.tar.gz --location --silent | tar xz -C vim
+      export PATH=$PATH:/app/vim/
     bash`,
     env: context.flags.env,
     showStatus: false,
